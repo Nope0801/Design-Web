@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hidden{
+    display: none;
+}
+
+/* main */
+
+#header{
+    height: 70px;
+    background-color: #10141B;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-logo img{
+    height: 70px;
+}
+
+.nav-layout{
+    display: inline-block;
+    list-style-type: none;
+}
+.nav-layout li{
+    padding: 0 30px;
+}  
+.nav-layout li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-layout li a:hover{
+    color: #F75154;
+}
+.nav-layout li{
+    display: inline-block;
+}
+
+
+.nav-login button{
+    width: 140px;
+    height: 40px;
+    margin: 0 20px;
+    color: #fff;
+    background-color: #10141B;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+.nav-login .btn-login{
+    background-color: #F75154;
+    border: 1px solid #F75154;
+    transition: transform 0.3s;
+}
+.nav-login .btn-register:hover{
+    background-color: #1E293B;
+}
+.nav-login button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+/* slide */
+
+#slide{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 70px;
+
+}
+
+#slide img{
+    width: 100%;
+    object-fit: cover;
+    animation: fadeInSlideshow 1s ease-in-out;
+}
+
+@keyframes fadeInSlideshow {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#slide .slide-btn:hover{
+    background-color: #F75154;
+
+}
+
+#slide .slide-btn-left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+#slide .slide-btn-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px 0 0 50px;
+    cursor: pointer;
+}
+
