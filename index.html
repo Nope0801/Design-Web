@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cinema website</title>
 </head>
+
 <body>
     <div id="main">
 
         <!-- Header -->
 
         <div id="header">
-            <div id="nav">
-                <div class="nav-logo">
-                    <img src="./assets/img/logo.webp" alt="">
-                </div>
-                <div class="nav-layout">
-                    <ul>
-                        <li><a href="">
-                            Trang chủ
-                        </a></li>
-                        <li><a href="">
-                            Lịch chiếu
-                        </a></li>
-                        <li><a href="">
-                            Khuyến mãi
-                        </a></li>
-                        <li><a href="">
-                            Giá vé
-                        </a></li>
-                        <li><a href="">
-                            Giới thiệu
-                        </a></li>
-                    </ul>
-                </div>
-                <div class="nav-login">
-                    <button class="btn-register">Đăng ký</button>
-                    <button class="btn-login">Đăng nhập</button>
+            <div class="nav-logo">
+                <img src="./assets/img/logo.webp" alt="">
+                <div class="name">
+                    <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
+                    <p>National Cinema Center</p>
                 </div>
             </div>
-
-            <!-- Mobile menu button -->
-            <!-- <div id="mobile-menu">
-
-            </div> -->
-
-            
+            <div class="nav-menu">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </div>
+            <div class="nav-layout">
+                <ul>
+                    <li><a href="" class="active">
+                            Trang chủ
+                        </a></li>
+                    <li><a href="">
+                            Lịch chiếu
+                        </a></li>
+                    <li><a href="">
+                            Khuyến mãi
+                        </a></li>
+                    <li><a href="">
+                            Giá vé
+                        </a></li>
+                    <li><a href="">
+                            Giới thiệu
+                        </a></li>
+                    <button class="btn-register js-register-btn">Đăng ký</button>
+                    <button class="btn-login js-login-btn">Đăng nhập</button>
+                </ul>
+            </div>
+        </div>
+        <!-- Login -->
+        <div class="login js-login">
+            <div class="login-container js-login-container">
+                <div class="login-header">
+                    <h1>Đăng nhập</h1>  
+                    <div class="login-close js-login-close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="login-body">
+                    <label for="email"> Email</label>
+                    <input type="email" name="" placeholder="Email">
+                    <label for="password"> Mật khẩu</label>
+                    <input type="password" name="" placeholder="Mật Khẩu">
+                    <p>Quên mật khẩu?</p>
+                    <button class="btn">Đăng nhập</button>
+                </div>
+                <footer class="login-footer">
+                    <p>Bạn chưa có tài khoản? <a href="">Đăng ký</a></p>
+                </footer>
+            </div>
         </div>
 
+        <div class="register js-register">
+            <div class="register-container js-register-container">
+                <div class="register-header">
+                    <h1>Đăng ký</h1>  
+                    <div class="register-close js-register-close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="register-body">
+                    <div class="register-card1">
+                        <div class="column">
+                            <label for="surname">Họ</label>
+                            <input type="surname" name="" placeholder="Họ">
+                        </div>
+                        <div class="column">
+                            <label for="name">Tên</label>
+                            <input type="name" name="" placeholder="Tên">
+                        </div>
+                    </div>
+                    <div class="register-card2">
+                        <div class="column">
+                            <label for="accountName">Tên tài khoản</label>
+                            <input type="accountName" name="" placeholder="Tên tài khoản">
+                        </div>
+                    </div>  
+                    <div class="register-card3">
+                        <div class="column">
+                            <label for="number">Số điện thoại</label>
+                            <input type="text" placeholder="Số điện thoại">
+                        </div>
+                        <div class="column">
+                            <label for="email">Email</label>
+                            <input type="email" name="" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="register-card4">
+                        <div class="column">
+                            <label for="password1">Mật khẩu</label>
+                            <input type="password1" name="" placeholder="Mật khẩu">
+                        </div>
+                        <div class="column">
+                            <label for="password2">Xác nhận mật khẩu</label>
+                            <input type="password2" name="" placeholder="Xác nhận mật khẩu">
+                        </div>
+                    </div>
+                    <button class="btn">Đăng nhập</button>
+                </div>
+                <footer class="register-footer">
+                    <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+                </footer>
+            </div>
+        </div>
 
 
         <!-- Slider -->
@@ -66,13 +140,16 @@
             <i onclick="prev()" class="fa-solid fa-circle-chevron-left slide-btn slide-btn-left prev"></i>
             <i onclick="next()" class="fa-solid fa-circle-chevron-right slide-btn slide-btn-right next"></i>
         </div>
-        
         <!-- Container -->
-    
+
         <!-- Content -->
-    
+
         <!-- Footer -->
-         <script src="./assets/js/slide.js"></script>
+
+        <script src="./assets/js/slide.js"></script>
+        <script src="./assets/js/navbar.js"></script>
+        <script src="./assets/js/login.js"></script>
     </div>
 </body>
+
 </html>

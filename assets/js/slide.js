@@ -1,5 +1,6 @@
 const images = document.getElementsByClassName('img');
 let index = 0;
+let timeoutId;
 
 function showImage(){
     for(let i = 0; i < images.length; i++){
@@ -8,9 +9,10 @@ function showImage(){
         }
     }
     images[index].classList.remove("hidden");
-    setTimeout(next, 3000);
+    timeoutId = setTimeout(next, 3000);
 }
 function next(){
+    clearTimeout(timeoutId);
     index++;
     if(index >= images.length){
         index = 0;
@@ -19,11 +21,12 @@ function next(){
 }
 
 function prev(){
+    clearTimeout(timeoutId);
     index--;   
     if(index < 0){
         index = images.length - 1;
     }
-    showImage(); 
+    showImage();
 }
 
 showImage();
