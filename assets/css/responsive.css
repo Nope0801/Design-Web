@@ -45,6 +45,24 @@
     .register-container{
         width: 350px;
     }
+
+    /* Schedule website */
+
+    .movies .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .movies .card{
+        width: 350px !important;
+        height: 300px;
+    }
+
+    .movies .card img{
+        width: 200px;
+        overflow: hidden;
+    }
+    
+    
 }
 
 @media (min-width: 740px) and (max-width: 1023px){

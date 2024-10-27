@@ -12,16 +12,19 @@ html {
 .hidden {
     display: none;
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: row;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 10px 10px 10px 0;
 }
+
 /* main */
 
 #header {
@@ -48,12 +51,15 @@ html {
 .nav-logo {
     height: 70px;
     min-width: 100px;
-
     display: flex;
 
 }
 
-.nav-logo img {}
+.nav-logo img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
 
 .nav-menu {
     display: none;
@@ -150,11 +156,12 @@ html {
 
 /* Login & register */
 @keyframes modelFadeIn {
-    from{
+    from {
         opacity: 1;
         transform: translateY(-140px);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
@@ -197,7 +204,7 @@ html {
     flex: 1;
 }
 
-.login-close{
+.login-close {
     cursor: pointer;
 }
 
@@ -211,15 +218,17 @@ html {
     flex: 2;
 }
 
-.login-body input{
+.login-body input {
     height: 50px;
     background-color: #10141B;
     border: 1px solid #1E293B;
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
+    color: #fff;
 }
-.login-body p{
+
+.login-body p {
     display: flex;
     margin: 15px 0;
     color: #E54242;
@@ -227,34 +236,36 @@ html {
     cursor: pointer;
 }
 
-.login-body p:hover{
+.login-body p:hover {
     text-decoration: underline;
 }
 
-.login-body button{
-    background-image: linear-gradient(to right,  #E6121D, #FB5F60 );
+.login-body button {
+    background-image: linear-gradient(to right, #E6121D, #FB5F60);
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
     color: #fff;
     cursor: pointer;
 }
-.login-footer{
+
+.login-footer {
     color: #fff;
     flex: 2;
     display: flex;
     justify-content: center;
 }
-.login-footer a{
+
+.login-footer a {
     color: #E54242;
     text-decoration: none;
 }
 
-.register.open{
+.register.open {
     display: flex;
 }
 
-.register{
+.register {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -268,7 +279,7 @@ html {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.register-container{
+.register-container {
     background-color: #10141B;
     width: 500px;
     height: 550px;
@@ -280,6 +291,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .register-header {
     color: #fff;
     float: right;
@@ -287,11 +299,11 @@ html {
     justify-content: space-between;
 }
 
-.register-close{
+.register-close {
     cursor: pointer;
 }
 
-.register-body{
+.register-body {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -299,54 +311,60 @@ html {
     flex: 2;
 }
 
-.register-body input{
+.register-body input {
     height: 50px;
     background-color: #10141B;
     border: 1px solid #1E293B;
     border-radius: 10px;
     padding: 10px;
     width: 100%;
+    color: #fff;
 }
 
-.register-body .register-card1{
+.register-body .register-card1 {
     display: flex;
     flex-direction: row;
 
 }
 
-.register-body .register-card2{
+.register-body .register-card2 {
     display: flex;
     flex-direction: row;
 
 }
-.register-body .register-card3{
+
+.register-body .register-card3 {
     display: flex;
     flex-direction: row;
 }
-.register-body .register-card4{
+
+.register-body .register-card4 {
     display: flex;
     flex-direction: row;
 }
 
 
-.register-body button{
-    background-image: linear-gradient(to right,  #E6121D, #FB5F60 );
+.register-body button {
+    background-image: linear-gradient(to right, #E6121D, #FB5F60);
     height: 40px;
     border-radius: 20px;
     margin: 10px 0;
     color: #fff;
     cursor: pointer;
 }
-.register-footer{
+
+.register-footer {
     color: #fff;
     flex: 2;
     display: flex;
     justify-content: center;
 }
-.register-footer a{
+
+.register-footer a {
     color: #E54242;
     text-decoration: none;
 }
+
 /* slide */
 
 #slide {
@@ -354,18 +372,18 @@ html {
     overflow: hidden;
     position: relative;
     margin-top: 70px;
-
+    transition: transform 0.5s 
 }
 
 #slide img {
     width: 100%;
     object-fit: cover;
-    animation: fadeInSlideshow 1s ease-in-out;
+    animation: fadeInSlideshow 1s;
 }
 
 @keyframes fadeInSlideshow {
     from {
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     to {

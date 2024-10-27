@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/buy.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Buy tickets</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.webp" alt="">
+            <div class="name">
+                <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
+                <p>National Cinema Center</p>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+        <div class="nav-layout">
+            <ul>
+                <li><a href="./index.html" class="">
+                        Trang chủ
+                    </a></li>
+                <li><a href="./schedule.html">
+                        Lịch chiếu
+                    </a></li>
+                <li><a href="./news.html">
+                        Tin tức
+                    </a></li>
+                <li><a href="">
+                        Giá vé
+                    </a></li>
+                <li><a href="">
+                        Giới thiệu
+                    </a></li>
+                <button class="btn-register js-register-btn">Đăng ký</button>
+                <button class="btn-login js-login-btn">Đăng nhập</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="login js-login">
+        <div class="login-container js-login-container">
+            <div class="login-header">
+                <h1>Đăng nhập</h1>
+                <div class="login-close js-login-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="login-body">
+                <label for="email"> Email</label>
+                <input type="email" name="" placeholder="Email">
+                <label for="password"> Mật khẩu</label>
+                <input type="password" name="" placeholder="Mật Khẩu">
+                <p>Quên mật khẩu?</p>
+                <button class="btn">Đăng nhập</button>
+            </div>
+            <footer class="login-footer">
+                <p>Bạn chưa có tài khoản? <a href="">Đăng ký</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="register js-register">
+        <div class="register-container js-register-container">
+            <div class="register-header">
+                <h1>Đăng ký</h1>
+                <div class="register-close js-register-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="register-body">
+                <div class="register-card1">
+                    <div class="column">
+                        <label for="surname">Họ</label>
+                        <input type="surname" name="" placeholder="Họ">
+                    </div>
+                    <div class="column">
+                        <label for="name">Tên</label>
+                        <input type="name" name="" placeholder="Tên">
+                    </div>
+                </div>
+                <div class="register-card2">
+                    <div class="column">
+                        <label for="accountName">Tên tài khoản</label>
+                        <input type="accountName" name="" placeholder="Tên tài khoản">
+                    </div>
+                </div>
+                <div class="register-card3">
+                    <div class="column">
+                        <label for="number">Số điện thoại</label>
+                        <input type="text" placeholder="Số điện thoại">
+                    </div>
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" name="" placeholder="Email">
+                    </div>
+                </div>
+                <div class="register-card4">
+                    <div class="column">
+                        <label for="password1">Mật khẩu</label>
+                        <input type="password1" name="" placeholder="Mật khẩu">
+                    </div>
+                    <div class="column">
+                        <label for="password2">Xác nhận mật khẩu</label>
+                        <input type="password2" name="" placeholder="Xác nhận mật khẩu">
+                    </div>
+                </div>
+                <button class="btn">Đăng nhập</button>
+            </div>
+            <footer class="register-footer">
+                <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- buy ticket -->
+    <div id="buyTicket">
+        <div class="header">
+            <h1>Booking online</h1>
+        </div>
+        <div class="body">
+            <img src="./assets/img/screen.webp" alt="" class="img">
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">A</div>
+                    <div class="seat"><p>A17</p></div>
+                    <div class="seat"><p>A16</p></div>
+                    <div class="seat"><p>A15</p></div>
+                    <div class="seat"><p>A14</p></div>
+                    <div class="seat"><p>A13</p></div>
+                    <div class="seat"><p>A12</p></div>
+                    <div class="seat"><p>A11</p></div>
+                    <div class="seat"><p>A10</p></div>
+                    <div class="seat"><p>A9</p></div>
+                    <div class="seat"><p>A8</p></div>
+                    <div class="seat"><p>A7</p></div>
+                    <div class="seat"><p>A6</p></div>
+                    <div class="seat"><p>A5</p></div>
+                    <div class="seat"><p>A4</p></div>
+                    <div class="seat"><p>A3</p></div>
+                    <div class="seat"><p>A2</p></div>
+                    <div class="seat"><p>A1</p></div>
+                    <div class="box">A</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">B</div>
+                    <div class="seat"><p>B17</p></div>
+                    <div class="seat"><p>B16</p></div>
+                    <div class="seat"><p>B15</p></div>
+                    <div class="seat"><p>B14</p></div>
+                    <div class="seat"><p>B13</p></div>
+                    <div class="seat"><p>B12</p></div>
+                    <div class="seat"><p>B11</p></div>
+                    <div class="seat"><p>B10</p></div>
+                    <div class="seat"><p>B9</p></div>
+                    <div class="seat"><p>B8</p></div>
+                    <div class="seat"><p>B7</p></div>
+                    <div class="seat"><p>B6</p></div>
+                    <div class="seat"><p>B5</p></div>
+                    <div class="seat"><p>B4</p></div>
+                    <div class="seat"><p>B3</p></div>
+                    <div class="seat"><p>B2</p></div>
+                    <div class="seat"><p>B1</p></div>
+                    <div class="box">B</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">C</div>
+                    <div class="seat"><p>C17</p></div>
+                    <div class="seat"><p>C16</p></div>
+                    <div class="seat"><p>C15</p></div>
+                    <div class="seat"><p>C14</p></div>
+                    <div class="seat"><p>C13</p></div>
+                    <div class="seat"><p>C12</p></div>
+                    <div class="seat"><p>C11</p></div>
+                    <div class="seat"><p>C10</p></div>
+                    <div class="seat"><p>C9</p></div>
+                    <div class="seat"><p>C8</p></div>
+                    <div class="seat"><p>C7</p></div>
+                    <div class="seat"><p>C6</p></div>
+                    <div class="seat"><p>C5</p></div>
+                    <div class="seat"><p>C4</p></div>
+                    <div class="seat"><p>C3</p></div>
+                    <div class="seat"><p>C2</p></div>
+                    <div class="seat"><p>C1</p></div>
+                    <div class="box">C</div>
+                </div>
+            </div>
+
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">D</div>
+                    <div class="seat"><p>D17</p></div>
+                    <div class="seat"><p>D16</p></div>
+                    <div class="seat vip"><p>D15</p></div>
+                    <div class="seat vip"><p>D14</p></div>
+                    <div class="seat vip"><p>D13</p></div>
+                    <div class="seat vip"><p>D12</p></div>
+                    <div class="seat vip"><p>D11</p></div>
+                    <div class="seat vip"><p>D10</p></div>
+                    <div class="seat vip"><p>D9</p></div>
+                    <div class="seat vip"><p>D8</p></div>
+                    <div class="seat vip"><p>D7</p></div>
+                    <div class="seat vip"><p>D6</p></div>
+                    <div class="seat vip"><p>D5</p></div>
+                    <div class="seat vip"><p>D4</p></div>
+                    <div class="seat vip"><p>D3</p></div>
+                    <div class="seat"><p>D2</p></div>
+                    <div class="seat"><p>D1</p></div>
+                    <div class="box">D</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">E</div>
+                    <div class="seat"><p>E17</p></div>
+                    <div class="seat"><p>E16</p></div>
+                    <div class="seat vip"><p>E15</p></div>
+                    <div class="seat vip"><p>E14</p></div>
+                    <div class="seat vip"><p>E13</p></div>
+                    <div class="seat vip"><p>E12</p></div>
+                    <div class="seat vip"><p>E11</p></div>
+                    <div class="seat vip"><p>E10</p></div>
+                    <div class="seat vip"><p>E9</p></div>
+                    <div class="seat vip"><p>E8</p></div>
+                    <div class="seat vip"><p>E7</p></div>
+                    <div class="seat vip"><p>E6</p></div>
+                    <div class="seat vip"><p>E5</p></div>
+                    <div class="seat vip"><p>E4</p></div>
+                    <div class="seat vip"><p>E3</p></div>
+                    <div class="seat"><p>E2</p></div>
+                    <div class="seat"><p>E1</p></div>
+                    <div class="box">E</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">F</div>
+                    <div class="seat"><p>F17</p></div>
+                    <div class="seat"><p>F16</p></div>
+                    <div class="seat vip"><p>F15</p></div>
+                    <div class="seat vip"><p>F14</p></div>
+                    <div class="seat vip"><p>F13</p></div>
+                    <div class="seat vip"><p>F12</p></div>
+                    <div class="seat vip"><p>F11</p></div>
+                    <div class="seat vip"><p>F10</p></div>
+                    <div class="seat vip"><p>F9</p></div>
+                    <div class="seat vip"><p>F8</p></div>
+                    <div class="seat vip"><p>F7</p></div>
+                    <div class="seat vip"><p>F6</p></div>
+                    <div class="seat vip"><p>F5</p></div>
+                    <div class="seat vip"><p>F4</p></div>
+                    <div class="seat vip"><p>F3</p></div>
+                    <div class="seat"><p>F2</p></div>
+                    <div class="seat"><p>F1</p></div>
+                    <div class="box">F</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">G</div>
+                    <div class="seat"><p>G17</p></div>
+                    <div class="seat"><p>G16</p></div>
+                    <div class="seat vip"><p>G15</p></div>
+                    <div class="seat vip"><p>G14</p></div>
+                    <div class="seat vip"><p>G13</p></div>
+                    <div class="seat vip"><p>G12</p></div>
+                    <div class="seat vip"><p>G11</p></div>
+                    <div class="seat vip"><p>G10</p></div>
+                    <div class="seat vip"><p>G9</p></div>
+                    <div class="seat vip"><p>G8</p></div>
+                    <div class="seat vip"><p>G7</p></div>
+                    <div class="seat vip"><p>G6</p></div>
+                    <div class="seat vip"><p>G5</p></div>
+                    <div class="seat vip"><p>G4</p></div>
+                    <div class="seat vip"><p>G3</p></div>
+                    <div class="seat"><p>G2</p></div>
+                    <div class="seat"><p>G1</p></div>
+                    <div class="box">G</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">H</div>
+                    <div class="seat"><p>H17</p></div>
+                    <div class="seat"><p>H16</p></div>
+                    <div class="seat vip"><p>H15</p></div>
+                    <div class="seat vip"><p>H14</p></div>
+                    <div class="seat vip"><p>H13</p></div>
+                    <div class="seat vip"><p>H12</p></div>
+                    <div class="seat vip"><p>H11</p></div>
+                    <div class="seat vip"><p>H10</p></div>
+                    <div class="seat vip"><p>H9</p></div>
+                    <div class="seat vip"><p>H8</p></div>
+                    <div class="seat vip"><p>H7</p></div>
+                    <div class="seat vip"><p>H6</p></div>
+                    <div class="seat vip"><p>H5</p></div>
+                    <div class="seat vip"><p>H4</p></div>
+                    <div class="seat vip"><p>H3</p></div>
+                    <div class="seat "><p>H2</p></div>
+                    <div class="seat "><p>H1</p></div>
+                    <div class="box">H</div>
+                </div>
+            </div>
+
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">I</div>
+                    <div class="seat"><p>I17</p></div>
+                    <div class="seat"><p>I16</p></div>
+                    <div class="seat vip"><p>I15</p></div>
+                    <div class="seat vip"><p>I14</p></div>
+                    <div class="seat vip"><p>I13</p></div>
+                    <div class="seat vip"><p>I12</p></div>
+                    <div class="seat vip"><p>I11</p></div>
+                    <div class="seat vip"><p>I10</p></div>
+                    <div class="seat vip"><p>I9</p></div>
+                    <div class="seat vip"><p>I8</p></div>
+                    <div class="seat vip"><p>I7</p></div>
+                    <div class="seat vip"><p>I6</p></div>
+                    <div class="seat vip"><p>I5</p></div>
+                    <div class="seat vip"><p>I4</p></div>
+                    <div class="seat vip"><p>I3</p></div>
+                    <div class="seat"><p>I2</p></div>
+                    <div class="seat"><p>I1</p></div>
+                    <div class="box">I</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">J</div>
+                    <div class="seat"><p>J17</p></div>
+                    <div class="seat"><p>J16</p></div>
+                    <div class="seat vip"><p>J15</p></div>
+                    <div class="seat vip"><p>J14</p></div>
+                    <div class="seat vip"><p>J13</p></div>
+                    <div class="seat vip"><p>J12</p></div>
+                    <div class="seat vip"><p>J11</p></div>
+                    <div class="seat vip"><p>J10</p></div>
+                    <div class="seat vip"><p>J9</p></div>
+                    <div class="seat vip"><p>J8</p></div>
+                    <div class="seat vip"><p>J7</p></div>
+                    <div class="seat vip"><p>J6</p></div>
+                    <div class="seat vip"><p>J5</p></div>
+                    <div class="seat vip"><p>J4</p></div>
+                    <div class="seat vip"><p>J3</p></div>
+                    <div class="seat"><p>J2</p></div>
+                    <div class="seat"><p>J1</p></div>
+                    <div class="box">J</div>
+                </div>
+            </div>
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">K</div>
+                    <div class="seat"><p>K17</p></div>
+                    <div class="seat"><p>K16</p></div>
+                    <div class="seat"><p>K15</p></div>
+                    <div class="seat"><p>K14</p></div>
+                    <div class="seat"><p>K13</p></div>
+                    <div class="seat"><p>K12</p></div>
+                    <div class="seat"><p>K11</p></div>
+                    <div class="seat"><p>K10</p></div>
+                    <div class="seat"><p>K9</p></div>
+                    <div class="seat"><p>K8</p></div>
+                    <div class="seat"><p>K7</p></div>
+                    <div class="seat"><p>K6</p></div>
+                    <div class="seat"><p>K5</p></div>
+                    <div class="seat"><p>K4</p></div>
+                    <div class="seat"><p>K3</p></div>
+                    <div class="seat"><p>K2</p></div>
+                    <div class="seat"><p>K1</p></div>
+                    <div class="box">K</div>
+                </div>
+            </div>
+
+
+            <div class="seat-container">
+                <div class="row">
+                    <div class="box">L</div>
+                    <div class="seat"><p>L17</p></div>
+                    <div class="seat"><p>L16</p></div>
+                    <div class="seat"><p>L15</p></div>
+                    <div class="seat"><p>L14</p></div>
+                    <div class="seat"><p>L13</p></div>
+                    <div class="seat"><p>L12</p></div>
+                    <div class="seat"><p>L11</p></div>
+                    <div class="seat"><p>L10</p></div>
+                    <div class="seat"><p>L9</p></div>
+                    <div class="seat"><p>L8</p></div>
+                    <div class="seat"><p>L7</p></div>
+                    <div class="seat"><p>L6</p></div>
+                    <div class="seat"><p>L5</p></div>
+                    <div class="seat"><p>L4</p></div>
+                    <div class="seat"><p>L3</p></div>
+                    <div class="seat"><p>L2</p></div>
+                    <div class="seat"><p>L1</p></div>
+                    <div class="box">L</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="note">
+                <div class="seat" style="background-color: #3B82f6;"></div>
+                <p>Ghế bạn chọn</p>
+                <div class="seat"></div>
+                <p>Ghế thường</p>
+                <div class="seat vip"></div>
+                <p>Ghế vip</p>  
+            </div>
+        </div>
+
+        <div class="pay-info">
+            <p class="cash">Tổng tiền: 0</p>
+            <button class="btn">Thanh toán</button>
+        </div>
+    </div>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/buy.js"></script>
+</body>
+
+</html>

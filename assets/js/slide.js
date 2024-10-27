@@ -3,6 +3,7 @@ let index = 0;
 let timeoutId;
 
 function showImage(){
+    
     for(let i = 0; i < images.length; i++){
         if(!images[i].classList.contains("hidden")){
             images[i].classList.add("hidden");

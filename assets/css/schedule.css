@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #10141B;
+}
+#content{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#content .header{
+    color: #fff;
+    text-align: center;
+    width: 100%
+}
+
+#content .movies{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movies .card{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid rgba(254, 254, 254, 0.2);
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.movies .card img{
+    min-width: 150px;
+    width: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.movies .card img:hover{
+    transform: scale(1.1);
+}
+.movies .card-content{
+    padding: 20px 15px;
+    color: #fff;
+}
+.movies .card-content h4{
+    padding-bottom: 5px;
+}
+.movies .card-content p{
+    padding-bottom: 5px;
+}
+
+.movies .card-content .catagory{
+    color: rgba(254, 254, 254, 0.2);
+    font-size: 15px;
+}
+
+.movies .card-content .warning{
+    color: #C13A3C;
+}
+
+.card .buy-btn{
+    width: 60px;
+    height: 40px;
+    margin: 2px;
+    background-color: #10141B;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.card .buy-btn a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
