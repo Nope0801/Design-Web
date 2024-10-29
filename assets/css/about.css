@@ -1,5 +1,6 @@
 .tab-description-container{
     display: flex;
+    min-width: 100px;
     flex-direction: row;
     justify-content: center;
     padding-top: 30px;
@@ -15,7 +16,7 @@
   }
   
   .image-container img{
-    width: 900px;
+    width: 100%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;

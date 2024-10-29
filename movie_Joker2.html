@@ -80,7 +80,7 @@
     <div class="poster-container">
       <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
         <div class="poster" style="width: 100%; height: auto">
-          <img src="./images/joker2landscape.avif" alt="Joker2">
+          <img src="./assets/img/joker2landscape.avif" alt="Joker2">
         </div>
         <button class="hover-button">
           <i class="fa-solid fa-circle-play fa-6x" style="color: #63E6BE;"></i>
@@ -208,14 +208,17 @@
 
               <ul class="formatpick">
                 <li>
-                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger" onclick="filterSelection('all')">Mọi định
+                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger"
+                    onclick="filterSelection('all')">Mọi định
                     dạng</button>
                 </li>
                 <li>
-                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger" onclick="filterSelection('2d')">2D</button>
+                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger"
+                    onclick="filterSelection('2d')">2D</button>
                 </li>
                 <li>
-                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger" onclick="filterSelection('3d')">3D</button>
+                  <button type="button" class="btn btn-outline-danger js-btn-outline-danger"
+                    onclick="filterSelection('3d')">3D</button>
                 </li>
                 <li>
                   <button type="button" class="btn btn-outline-danger js-btn-outline-danger"
@@ -449,10 +452,10 @@
   <script>
     const outlinebtn = document.getElementsByClassName('js-btn-outline-danger');
     let index = 0;
-    
-    for(let i = 0; i < outlinebtn.length; i++){
-      outlinebtn[i].addEventListener('click', function(){
-        for(let j = 0; j < outlinebtn.length; j++){
+
+    for (let i = 0; i < outlinebtn.length; i++) {
+      outlinebtn[i].addEventListener('click', function () {
+        for (let j = 0; j < outlinebtn.length; j++) {
           outlinebtn[j].classList.remove("active");
         }
         outlinebtn[i].classList.add("active");
