@@ -1,18 +1,18 @@
 /* PC */
-@media (min-width: 1023px){
-    
-}
+@media (min-width: 1023px) {}
 
 /* tablet & mobile */
-@media (max-width: 1100px){
-    #header{
+@media (max-width: 1100px) {
+    #header {
         display: flex;
         justify-content: space-between;
     }
-    .nav-logo .name{
+
+    .nav-logo .name {
         display: block;
     }
-    .nav-layout{
+
+    .nav-layout {
         display: none;
         position: absolute;
         top: 100%;
@@ -23,52 +23,58 @@
         row-gap: 1.4rem;
         padding: 20px;
     }
-    .nav-menu{
+
+    .nav-menu {
         display: block;
     }
-    .nav-layout li{
+
+    .nav-layout li {
         display: block;
         text-align: center;
         padding: 20px;
     }
-    .nav-layout button{
+
+    .nav-layout button {
         margin: 20px;
     }
-    .nav-layout.active{
+
+    .nav-layout.active {
         display: flex;
+    }
+
+    .list-container {
+        justify-content: center;
     }
 
     .login-container {
         width: 300px;
     }
 
-    .register-container{
+    .register-container {
         width: 350px;
     }
 
     /* Schedule website */
 
-    .movies .row{
+    .movies .row {
         display: flex;
         flex-direction: column;
     }
-    .movies .card{
+
+    .movies .card {
         width: 350px !important;
         height: 300px;
     }
 
-    .movies .card img{
+    .movies .card img {
         width: 200px;
         overflow: hidden;
     }
-    
-    
+
+
 }
 
-@media (min-width: 740px) and (max-width: 1023px){
-    
-}
+@media (min-width: 740px) and (max-width: 1023px) {}
+
 /* Mobile */
-@media (max-width: 739px){
-
-}
+@media (max-width: 739px) {}
