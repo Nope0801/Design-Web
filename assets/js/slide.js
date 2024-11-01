@@ -10,7 +10,7 @@ function showImage(){
         }
     }
     images[index].classList.remove("hidden");
-    timeoutId = setTimeout(next, 3000);
+    timeoutId = setTimeout(next, 10000);
 }
 function next(){
     clearTimeout(timeoutId);

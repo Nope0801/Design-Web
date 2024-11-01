@@ -44,3 +44,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementsByClassName('cash')[0].innerHTML = `Tổng tiền: ${totalCash}.000 đ`;
     }
 });
+
+const paybtn = document.getElementsByClassName('js-pay-btn')[0];

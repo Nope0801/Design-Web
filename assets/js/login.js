@@ -16,9 +16,7 @@ login.addEventListener('click', hideLogin);
 
 loginContainer.addEventListener('click', function(event){
     event.stopPropagation();
-})
-
-
+});
 
 const registerClose = document.getElementsByClassName('js-register-close')[0];
 const register = document.getElementsByClassName('js-register')[0];
@@ -66,6 +64,9 @@ function login1(){
         alert("Mật khẩu không phù hợp");
         return;
     }
+    else{
+        hideLogin();
+    }
 }
 
 function register1(){
@@ -88,6 +89,9 @@ function register1(){
     else if(confirmPassword.value.trim() != password2.value.trim()){
         alert("Mật khẩu xác nhận không phù hợp");
         return;
+    }
+    else{
+        hideregister();
     }
 }
 
@@ -114,3 +118,15 @@ function validatePassword(password){
 
 loginBtn2.addEventListener('click', login1);
 registerBtn2.addEventListener('click', register1);
+
+const trybutton = document.getElementsByClassName('trybtn');
+trybutton[0].addEventListener('click', function(){
+    showregister();
+    hideLogin();
+});
+
+trybutton[1].addEventListener('click', function(){
+    showLogin();
+    hideregister();
+});
+
