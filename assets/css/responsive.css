@@ -43,7 +43,8 @@
     }
 
     .list-container {
-        justify-content: center;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .login-container {
@@ -71,6 +72,23 @@
         overflow: hidden;
     }
 
+    .movies .card p{
+        font-size: 10px !important;
+    }
+    .movies .card h4{
+        font-size: 12px;
+    }
+
+    .card .buy-btn{
+        width: 45px !important;
+        height: 30px !important;
+    }
+    
+    .card .buy-btn a{
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+    }
 
 }
 
