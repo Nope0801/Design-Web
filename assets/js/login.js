@@ -1,8 +1,17 @@
+
 const loginClose = document.getElementsByClassName('js-login-close')[0];
 const login = document.getElementsByClassName('js-login')[0];
 const loginContainer = document.getElementsByClassName('js-login-container')[0];
 const loginBtn = document.getElementsByClassName('js-login-btn')[0];
 
+const loginUser = document.getElementsByClassName('login-user')[0];
+const loginName = document.getElementsByClassName('login-name')[0];
+const loginOut = document.getElementsByClassName('js-login-out')[0];
+
+loginOut.addEventListener('click', function(){
+    localStorage.clear();
+    location.reload();
+});
 function showLogin(){
     login.classList.add('open');
 }
@@ -51,23 +60,9 @@ const confirmPassword = document.getElementById('confirmPassword');
 const loginBtn2 = document.getElementsByClassName('js-login-btn')[1];
 const registerBtn2 = document.getElementsByClassName('js-register-btn')[1];
 
-function login1(){
-    if(email1.value.trim() === ""|| password1.value.trim() === ""){
-        alert("Vui lòng điền đầy đủ thông tin");
-        return;
-    }
-    else if(validateEmail(email1.value.trim()) === false){
-        alert("Email không phù hợp");
-        return;
-    }
-    else if(validatePassword(password1.value.trim()) === false){
-        alert("Mật khẩu không phù hợp");
-        return;
-    }
-    else{
-        hideLogin();
-    }
-}
+
+
+let storedUser;
 
 function register1(){
     if(surname.value.trim() === "" || name1.value.trim() === ""|| accountName.value.trim() === ""|| number.value.trim() ===""||email2.value.trim() ===""|| password2.value.trim() ===""||confirmPassword.value.trim() ===""){
@@ -90,11 +85,54 @@ function register1(){
         alert("Mật khẩu xác nhận không phù hợp");
         return;
     }
-    else{
-        hideregister();
-    }
+    const user = {
+        surname: surname.value.trim(),
+        name: name1.value.trim(),
+        accountName: accountName.value.trim(),
+        number: number.value.trim(),
+        email: email2.value.trim(),
+        password: password2.value.trim()
+    };
+    localStorage.setItem('user', JSON.stringify(user));
+    hideregister();
+    alert("Đăng ký thành công");
 }
 
+function login1(){
+    if(email1.value.trim() === ""|| password1.value.trim() === ""){
+        alert("Vui lòng điền đầy đủ thông tin");
+        return;
+    }
+    else if(validateEmail(email1.value.trim()) === false){
+        alert("Email không phù hợp");
+        return;
+    }
+    else if(validatePassword(password1.value.trim()) === false){
+        alert("Mật khẩu không phù hợp");
+        return;
+    }
+    const inputUser = {
+        email: email1.value.trim(),
+        password: password1.value.trim()
+    };
+    storedUser = JSON.parse(localStorage.getItem('user'));
+    
+    if (storedUser && inputUser.email === storedUser.email && inputUser.password === storedUser.password) {
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('loggedInUser', JSON.stringify(storedUser));
+        updateUI(storedUser);
+        alert("Đăng nhập thành công");
+        hideLogin();
+    } else {
+        alert("Sai tài khoản hoặc mật khẩu!");
+    }
+}
+function updateUI(user) {
+    loginBtn.classList.add("remove");
+    registerBtn.classList.add("remove");
+    loginUser.classList.add("open");
+    loginName.innerHTML = `Hello ${user.accountName}`;
+}
 
 function validateEmail(email){
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$/;
@@ -121,12 +159,20 @@ registerBtn2.addEventListener('click', register1);
 
 const trybutton = document.getElementsByClassName('trybtn');
 trybutton[0].addEventListener('click', function(){
-    showregister();
     hideLogin();
+    showregister();
 });
 
 trybutton[1].addEventListener('click', function(){
-    showLogin();
     hideregister();
+    showLogin();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (isLoggedIn === 'true' && loggedInUser) {
+        updateUI(loggedInUser);
+    }
+});
