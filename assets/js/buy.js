@@ -16,7 +16,7 @@
 //         });
 //     }
 // });
-
+let totalCash = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
     const seats = document.getElementsByClassName('seat');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     function calculateCashs(){
-        let totalCash = 0;
+        totalCash = 0;
         for(let seat of seats){
             if(seat.classList.contains('active')){
                 console.log(seat)
@@ -45,4 +45,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-const paybtn = document.getElementsByClassName('js-pay-btn')[0];
+const payClose = document.getElementsByClassName('js-pay-close')[0];
+const pay = document.getElementsByClassName('js-pay')[0];
+const payContainer = document.getElementsByClassName('js-pay-container')[0];
+const payBtn = document.getElementsByClassName('js-pay-btn')[0];
+
+const payMoney = document.getElementsByClassName('pay-money')[0];
+console.log(payMoney);
+function showPay(){
+    pay.classList.add('open');
+    payMoney.innerHTML = `Tổng tiền: ${totalCash}.000 đ`;
+}
+function hidePay(){
+    pay.classList.remove('open');
+}
+
+// payBtn.addEventListener('click', showPay);
+payBtn.addEventListener('click', function(){
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if(isLoggedIn === 'true'){
+        showPay();
+    }
+    else{
+        showLogin();   
+    }
+});
+payClose.addEventListener('click', hidePay);
+pay.addEventListener('click', hidePay);
+
+payContainer.addEventListener('click', function(event){
+    event.stopPropagation();
+});
+

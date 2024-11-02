@@ -377,20 +377,6 @@ html {
     display: flex;
 }
 .login-user{
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     display: none;
 }
 
@@ -402,7 +388,7 @@ html {
 .login-user .login-name{
     color: #fff;
     font-size: 15px;
-    margin: 7px;
+    margin: 10px;
 }
 /* slide */
 
