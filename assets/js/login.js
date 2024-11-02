@@ -9,7 +9,7 @@ const loginName = document.getElementsByClassName('login-name')[0];
 const loginOut = document.getElementsByClassName('js-login-out')[0];
 
 loginOut.addEventListener('click', function(){
-    localStorage.clear();
+    localStorage.setItem('isLoggedIn', 'false');
     location.reload();
 });
 function showLogin(){
