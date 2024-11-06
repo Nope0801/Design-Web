@@ -20,42 +20,44 @@
 <body>
     <div id="header">
         <div class="nav-logo">
+          <a href="./index.html">
             <img src="./assets/img/logo.webp" alt="">
-            <div class="name">
-                <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
-                <p>National Cinema Center</p>
-            </div>
+          </a>
+          <div class="name">
+            <p>TRUNG TÂM CHIẾU PHIM QUỐC GIA</p>
+            <p>National Cinema Center</p>
+          </div>
         </div>
         <div class="nav-menu">
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
         <div class="nav-layout">
-            <ul>
-                <li><a href="./index.html" class="">
-                        Trang chủ
-                    </a></li>
-                <li><a href="./schedule.html">
-                        Lịch chiếu
-                    </a></li>
-                <li><a href="./news.html">
-                        Tin tức
-                    </a></li>
-                <li><a href="./price.html">
-                        Giá vé
-                    </a></li>
-                <li><a href="./about.html">
-                        Giới thiệu
-                    </a></li>
-                <button class="btn-register js-register-btn">Đăng ký</button>
-                <button class="btn-login js-login-btn">Đăng nhập</button>
-            </ul>
-            <div class="login-user">
-                <i class="fa-regular fa-circle-user login-avt"></i>
-                <p class="login-name"></p>
-                <button class="login-out js-login-out">Đăng xuất</button>
-            </div>
+          <ul>
+            <li><a href="./index.html">
+                Trang chủ
+              </a></li>
+            <li><a href="./schedule.html">
+                Lịch chiếu
+              </a></li>
+            <li><a href="./news.html">
+                Tin tức
+              </a></li>
+            <li><a href="./price.html">
+                Giá vé
+              </a></li>
+            <li><a href="./about.html">
+                Giới thiệu
+              </a></li>
+            <button class="btn-register js-register-btn"">Đăng ký</button>
+            <button class="btn-login js-login-btn">Đăng nhập</button>
+          </ul>
+          <div class="login-user">
+            <i class="fa-regular fa-circle-user login-avt" ></i>
+            <p class="login-name"></p>
+            <button class="login-out js-login-out">Đăng xuất</button>
+          </div>
         </div>
-    </div>
+      </div>
 
     <div class="login js-login">
         <div class="login-container js-login-container">
@@ -851,8 +853,11 @@
         </div>
 
         <div class="pay-info">
-            <p class="cash">Tổng tiền: 0</p>
-            <button class="btn js-pay-btn">Thanh toán</button>
+            <p class="chosenSeat"></p>
+            <div class="cash-container">
+                <p class="cash">Tổng tiền: 0</p>
+                <button class="btn js-pay-btn">Thanh toán</button>
+            </div>
         </div>
 
         <div class="pay js-pay">

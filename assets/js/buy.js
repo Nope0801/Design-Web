@@ -17,15 +17,25 @@
 //     }
 // });
 let totalCash = 0;
+const seats = document.getElementsByClassName('seat');
+const chosenSeat = document.getElementsByClassName('chosenSeat')[0];
 
+function printActiveSeats(){
+    chosenSeat.innerHTML = 'Ghế đã chọn: ';
+    for(let seat of seats){
+        if(seat.classList.contains('active')){
+            chosenSeat.innerHTML += `${seat.textContent} `;
+        }
+    }
+}
 document.addEventListener('DOMContentLoaded', function () {
-    const seats = document.getElementsByClassName('seat');
     const result = document.getElementsByClassName('cash')[0];
     for (let seat of seats) {
         seat.addEventListener('click', function () {
          //   console.log(seat)
             seat.classList.toggle('active');
             calculateCashs();
+            printActiveSeats();
         });
     }
     function calculateCashs(){
